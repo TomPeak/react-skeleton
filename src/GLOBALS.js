@@ -1,8 +1,8 @@
 export const versions = {
   available: [
-    '0.0.1',
+    '0.9.0',
   ],
-  current: '0.0.1',
+  current: '0.9.0',
 };
 
 export const host = 'update.magicshifter.net';
