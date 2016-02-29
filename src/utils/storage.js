@@ -1,9 +1,11 @@
 import localforage from 'localforage';
 
 export const getItem =
-  item =>
-    localforage.getItem(item);
+  key =>
+    console.log('getItem', { key }) ||
+    localforage.getItem(key);
 
 export const setItem =
-  (item, value) =>
-    localforage.setItem(item, value);
+  (key, value) =>
+    console.log('setItem', { key, value }) ||
+    localforage.setItem(key, value);
