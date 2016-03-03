@@ -33,11 +33,6 @@ export const actions = {
 // ------------------------------------
 
 export default handleActions({
-
-  [LOAD_CURRENT_VERSION]:
-    (state, { payload: p }) =>
-      state,
-
   [FETCH_AVAILABLE_VERSIONS]: {
     next(state, { payload }) {
       console.log('next', { payload });
