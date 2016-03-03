@@ -1,0 +1,34 @@
+{
+  "name": "MagicShifter-FirmwareUpdater",
+  "version": "0.0.1",
+  "description": "MagicShifter3000 userinterface app, built using react, redux and magic.",
+  "main": "index.html",
+  "build": {
+    "app-bundle-id": "magicshifter.flasher",
+    "app-category-type": "public.app-category.utilities",
+    "iconUrl": "(windows only) A URL to an ICO file to use as the application icon, see details below"
+  },
+  "author": "Wizards@Work <dev@wizardsat.work> (http://wizardsat.work)",
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    },
+    {
+      "name": "philipp tiefenbacher",
+      "github": "wizard23"
+    },
+    {
+      "name": "jay vaughan",
+      "github": "seclorum"
+    },
+    {
+      "name": "tom peak",
+      "github": "tompeak"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicshifter/ms3000-webinterface"
+  }
+}

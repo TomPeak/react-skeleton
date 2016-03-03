@@ -51,12 +51,4 @@ compiler.run(function (err, stats) {
   );
 
   fs.writeFileSync(path.join(paths.dist(), 'min.html'), fileContent, 'utf8');
-
-  var appCacheContent = fs.readFileSync(path.join(paths.client(), 'magicshifter.appcache'), 'utf8');
-  appCacheContent = appCacheContent.replace(
-    '|DATE|',
-    new Date()
-  );
-
-  fs.writeFileSync(path.join(paths.dist(), 'magicshifter.appcache'), appCacheContent, 'utf8');
 });
