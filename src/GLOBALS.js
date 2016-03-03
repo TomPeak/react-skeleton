@@ -12,4 +12,5 @@ export const protocol = 'http';
 export const links = [
   { to: '/', icon: 'info' },
   { to: '/settings', icon: 'settings' },
+  { to: '/3d', icon: 'webGl' },
 ];

@@ -18,6 +18,7 @@ $trash: "\e910";
 $upload: "\e911";
 $zoom_in: "\e912";
 $zoom_out: "\e913";
+$webGl: "\e913";
 
 @font-face {
   font-family: 'MS3000';
@@ -137,6 +138,11 @@ $zoom_out: "\e913";
         content: $settings;
     }
 }
+.webGl{
+  &:before {
+        content: $webGl;
+    }
+}
 .shapes {
     &:before {
         content: $shapes;
@@ -161,4 +167,5 @@ $zoom_out: "\e913";
     &:before {
         content: $zoom_out;
     }
+
 }
