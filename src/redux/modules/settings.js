@@ -1,7 +1,7 @@
 import { createAction, handleActions } from 'redux-actions';
 import Immutable from 'immutable';
 
-import { fetch } from 'utils/http';
+import { getItem, setItem } from 'utils/storage';
 
 import { host, port, protocol } from 'GLOBALS';
 
@@ -22,15 +22,14 @@ export const LOAD_SETTINGS = 'LOAD_SETTINGS';
 // ------------------------------------
 export const setSettings = createAction(
   SET_SETTINGS,
-  value => value
+  async item =>
+    await setItem('settings', item)
 );
 
 export const loadSettings = createAction(
   LOAD_SETTINGS,
-  async ({ protocol, host, port }) =>
-    await fetch(`
-      ${protocol}://${host}${port !== 80 ? ':' + port : ''}/settings/wifi/list
-    `)
+  async () =>
+    await getItem('settings')
 );
 
 export const actions = {
@@ -44,6 +43,7 @@ export const actions = {
 export default handleActions({
   [SET_SETTINGS]:
     (state, { payload }) =>
+      console.log('set settings', { state: state.toJS(), payload }) ||
       Immutable.Map({
         ...state.toJS(),
         ...payload,
@@ -51,24 +51,8 @@ export default handleActions({
 
   [LOAD_SETTINGS]:
     (state, { payload }) => {
-      const { status, responseText } = payload;
-
-      if (status !== 200) {
-        return state.delete('apLoading').set('apLoadError', 'No MagicShifter found in Network.');
-      }
-
-      let parsed = false;
-      try {
-        parsed = JSON.parse(responseText);
-      } catch (err) {
-        return state.delete('apLoading').set('apLoadError', 'MagicShifter response invalid');
-      }
-
-      if (parsed) {
-        return state.delete('apLoading').set('accesspoints', parsed);
-      }
-
-      return state.delete('apLoading').set('apLoadError', 'Unknown Error');
+      console.log('settings', { state: state.toJS(), payload });
+      return state.set('initialValues', payload);
     },
 
 }, initialState);
