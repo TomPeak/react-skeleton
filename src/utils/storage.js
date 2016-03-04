@@ -6,4 +6,4 @@ export const getItem =
 
 export const setItem =
   (key, value) =>
-    localforage.setItem (key, value);
+    localforage.setItem(key, value);
