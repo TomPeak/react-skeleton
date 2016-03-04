@@ -22,7 +22,7 @@ export class InfoView extends Component {
     fetchAvailableVersionsError: PropTypes.string,
     versions: PropTypes.array,
     host: PropTypes.string.isRequired,
-    port: PropTypes.number.isRequired,
+    port: PropTypes.string.isRequired,
     protocol: PropTypes.string.isRequired,
   };
 

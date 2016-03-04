@@ -42,17 +42,23 @@ export const actions = {
 // ------------------------------------
 export default handleActions({
   [SET_SETTINGS]:
-    (state, { payload }) =>
-      console.log('set settings', { state: state.toJS(), payload }) ||
-      Immutable.Map({
+    (state, { payload }) => {
+      const newState = Immutable.Map({
         ...state.toJS(),
         ...payload,
-      }),
+      });
+
+      return newState.set('initialValues', payload);
+    },
 
   [LOAD_SETTINGS]:
     (state, { payload }) => {
-      console.log('settings', { state: state.toJS(), payload });
-      return state.set('initialValues', payload);
+      const newState = Immutable.Map({
+        ...state.toJS(),
+        ...payload,
+      });
+
+      return newState.set('initialValues', payload);
     },
 
 }, initialState);

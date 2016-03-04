@@ -82,6 +82,7 @@ export class SettingsView extends Component {
                 Update Server Settings
               </h2>
               <h5>Use this settings if you want to use your own build server.</h5>
+              <p>Current url: {protocol.value}://{host.value}{parseInt(port.value, 10) !== 80 && `:${port.value}`}/</p>
             </legend>
 
             <ul>
