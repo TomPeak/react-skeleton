@@ -6,7 +6,7 @@ export const versions = {
 };
 
 export const host = 'update.magicshifter.net';
-export const port = 80;
+export const port = '80';
 export const protocol = 'http';
 
 export const links = [
