@@ -36,11 +36,15 @@ export default handleActions({
   [FETCH_AVAILABLE_VERSIONS]: {
     next(state, { payload }) {
       console.log('next', { payload });
-      return state.set('fetchAvailableVersionsError', '');
+      return {
+        ...state.toJS(),
+        ...payload,
+        fetchAvailableVersionsError: '',
+      };
     },
     throw(state, { payload }) {
       console.log('throw', { payload });
-      return state.set('fetchAvailableVersionsError', payload.message);
+      return state.set('fetchAvailableVersionsError', payload);
     },
   },
 
