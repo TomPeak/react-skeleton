@@ -27,28 +27,34 @@ export const fetch =
       req.onload =
         () => {
           log(requestStart);
+
           if (req.status === 200) {
             if (json) {
-              resolve(parseJSONResult(req));
+              const parsed = parseJSONResult(req.response || req.responseText);
+              if (typeof parsed === 'string') {
+                reject(parsed);
+              } else {
+                resolve(parsed);
+              }
             } else {
               resolve(req);
             }
             return;
           }
 
-          reject(new Error(req.statusText));
+          reject(req.statusText || 'Unkown Error');
         };
 
       req.onerror =
         () => {
           log(requestStart);
-          reject(new Error('Network Error'));
+          reject('Network Error');
         };
 
       req.ontimeout =
         () => {
           log(requestStart);
-          reject(new Error('Request timed out'));
+          reject('Request timed out');
         };
 
       req.send();
@@ -56,11 +62,11 @@ export const fetch =
 
 export const parseJSONResult =
   res => {
-    let parsed = new Error('invalid Response');
+    let parsed = new Error('Response JSON payload invalid');
     try {
       parsed = JSON.parse(res);
     } catch (e) {
-      parsed = e;
+      console.error('JSON parsing error', e);
     }
 
     return parsed;
