@@ -3,7 +3,7 @@ import { Route, IndexRoute, Redirect } from 'react-router';
 
 import CoreLayout from 'layouts/CoreLayout';
 
-import InfoView from 'views/Info';
+import IndexView from 'views/Index';
 
 import SettingsView from 'views/Settings';
 
@@ -14,7 +14,7 @@ import NotFoundView from 'views/NotFound';
 export default (
   <Route path='/' component={CoreLayout}>
     <IndexRoute
-      component={InfoView}
+      component={IndexView}
     />
 
     <Route
