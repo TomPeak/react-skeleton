@@ -28,22 +28,22 @@ export class InfoView extends Component {
 
   state = {
     fetchingAvailableVersions: false,
-    fetchingAvailableVersionsError: false,
   };
 
   constructor(props) {
     super(props);
 
-    this.fetchVersions = this.fetchVersions.bind(this);
+    this.fetchAvailableVersions = this.fetchAvailableVersions.bind(this);
   }
 
-  fetchVersions() {
+  fetchAvailableVersions() {
     const { host, protocol, port, fetchAvailableVersions } = this.props;
     const realPort = parseInt(port, 10) === 80 ? '' : `:${port}`;
     const url = `${protocol}://${host}${realPort}/versions.json`;
     this.setState({
       fetchingAvailableVersions: true,
     });
+
     fetchAvailableVersions(url)
       .then(
         () =>
@@ -68,7 +68,7 @@ export class InfoView extends Component {
 
           <button
             disabled={fetchingAvailableVersions}
-            onClick={this.fetchVersions}
+            onClick={this.fetchAvailableVersions}
           >
             <i
               className={getIconCssClass(fetchingAvailableVersions ? 'loading' : 'download')}
