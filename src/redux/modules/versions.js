@@ -36,7 +36,7 @@ export default handleActions({
   [FETCH_AVAILABLE_VERSIONS]: {
     next(state, { payload }) {
       console.log('next', { payload });
-      return state.set('fetchAvailableVersionsError', false);
+      return state.set('fetchAvailableVersionsError', '');
     },
     throw(state, { payload }) {
       console.log('throw', { payload });
