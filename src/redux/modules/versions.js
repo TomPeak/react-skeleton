@@ -21,7 +21,7 @@ export const fetchAvailableVersions =
   createAction(
     FETCH_AVAILABLE_VERSIONS,
     async url =>
-      await fetchJSON({ url, json: true })
+      await fetchJSON({ url })
   );
 
 export const actions = {
