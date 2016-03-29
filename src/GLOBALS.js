@@ -12,5 +12,20 @@ export const protocol = 'http';
 
 export const links = [
   { to: '/', icon: 'info' },
-  { to: '/settings', icon: 'settings' },
+  { to: '/article', icon: 'settings' },
+  { to: '/price', icon: 'plus' },
+  { to: '/bill', icon: 'minus' },
+];
+
+export const numPad = [
+  { key: '1' },
+  { key: '2' },
+  { key: '3' },
+  { key: '4' },
+  { key: '5' },
+  { key: '6' },
+  { key: '7' },
+  { key: '8' },
+  { key: '9' },
+  { key: '0' },
 ];
