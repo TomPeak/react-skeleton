@@ -1,0 +1,54 @@
+2016-03-29T23:53:43.474602000 0.325733s notice: Recursively removing directory /Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data/tmp
+2016-03-29T23:53:43.475884000 0.327018s notice: Initializing directory /Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data
+2016-03-29T23:53:43.476428000 0.327558s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data' did not already exist or is empty.)
+2016-03-29T23:53:43.476467000 0.327596s notice: Running rethinkdb 2.2.6 (CLANG 7.0.2 (clang-700.1.81))...
+2016-03-29T23:53:43.481999000 0.333130s notice: Running on Darwin 14.5.0 x86_64
+2016-03-29T23:53:43.482053000 0.333182s notice: Loading data from directory /Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data
+2016-03-29T23:53:43.561904000 0.413034s info: Automatically using cache size of 100 MB
+2016-03-29T23:53:43.561918000 0.413048s warn: Cache size does not leave much memory for server and query overhead (available memory: 548 MB).
+2016-03-29T23:53:43.561926000 0.413056s warn: Cache size is very low and may impact performance.
+2016-03-29T23:53:43.563049000 0.414178s notice: Listening for intracluster connections on port 29015
+2016-03-29T23:53:43.565223000 0.416353s notice: Listening for client driver connections on port 28015
+2016-03-29T23:53:43.565485000 0.416614s notice: Listening for administrative HTTP connections on port 8080
+2016-03-29T23:53:43.565494000 0.416623s notice: Listening on addresses: 127.0.0.1, ::1
+2016-03-29T23:53:43.565496000 0.416625s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-29T23:53:43.565501000 0.416631s notice: Server ready, "Toms_MacBook_Pro_local_nhp" 380bbbd8-bf5d-4bd4-85e8-e74702359b36
+2016-03-29T23:54:03.824587000 20.676132s notice: Server got SIGINT from pid 1468, uid 501; shutting down...
+2016-03-29T23:54:03.826204000 20.677748s notice: Shutting down client connections...
+2016-03-29T23:54:03.826456000 20.678000s notice: All client connections closed.
+2016-03-29T23:54:03.826472000 20.678015s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-29T23:54:03.833511000 20.685055s notice: Storage engine shut down.
+2016-03-29T23:55:05.189631000 0.005646s notice: Running rethinkdb 2.2.6 (CLANG 7.0.2 (clang-700.1.81))...
+2016-03-29T23:55:05.195425000 0.011435s notice: Running on Darwin 14.5.0 x86_64
+2016-03-29T23:55:05.195487000 0.011495s notice: Loading data from directory /Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data
+2016-03-29T23:55:05.221567000 0.037575s info: Automatically using cache size of 100 MB
+2016-03-29T23:55:05.221582000 0.037590s warn: Cache size does not leave much memory for server and query overhead (available memory: 583 MB).
+2016-03-29T23:55:05.221591000 0.037598s warn: Cache size is very low and may impact performance.
+2016-03-29T23:55:05.222479000 0.038487s notice: Listening for intracluster connections on port 29015
+2016-03-29T23:55:05.225795000 0.041803s notice: Listening for client driver connections on port 28015
+2016-03-29T23:55:05.226107000 0.042115s notice: Listening for administrative HTTP connections on port 8080
+2016-03-29T23:55:05.226114000 0.042121s notice: Listening on addresses: 127.0.0.1, ::1
+2016-03-29T23:55:05.226115000 0.042123s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-29T23:55:05.226121000 0.042128s notice: Server ready, "Toms_MacBook_Pro_local_nhp" 380bbbd8-bf5d-4bd4-85e8-e74702359b36
+2016-03-29T23:57:35.987802000 150.806748s notice: Server got SIGINT from pid 1468, uid 501; shutting down...
+2016-03-29T23:57:35.987918000 150.806863s notice: Shutting down client connections...
+2016-03-29T23:57:35.988034000 150.806979s notice: All client connections closed.
+2016-03-29T23:57:35.988038000 150.806983s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-29T23:57:35.988278000 150.807223s notice: Storage engine shut down.
+2016-03-29T23:58:27.614766000 0.318343s notice: Running rethinkdb 2.2.6 (CLANG 7.0.2 (clang-700.1.81))...
+2016-03-29T23:58:27.636093000 0.339668s notice: Running on Darwin 14.5.0 x86_64
+2016-03-29T23:58:27.636214000 0.339787s notice: Loading data from directory /Users/tompeak/Desktop/develop/moschi_react/rethinkdb_data
+2016-03-29T23:58:27.656772000 0.360344s info: Automatically using cache size of 100 MB
+2016-03-29T23:58:27.656793000 0.360365s warn: Cache size does not leave much memory for server and query overhead (available memory: 498 MB).
+2016-03-29T23:58:27.656804000 0.360376s warn: Cache size is very low and may impact performance.
+2016-03-29T23:58:27.657410000 0.360982s notice: Listening for intracluster connections on port 29015
+2016-03-29T23:58:27.658928000 0.362500s notice: Listening for client driver connections on port 28015
+2016-03-29T23:58:27.659127000 0.362699s notice: Listening for administrative HTTP connections on port 8080
+2016-03-29T23:58:27.659131000 0.362703s notice: Listening on addresses: 127.0.0.1, ::1
+2016-03-29T23:58:27.659132000 0.362704s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-29T23:58:27.659136000 0.362707s notice: Server ready, "Toms_MacBook_Pro_local_nhp" 380bbbd8-bf5d-4bd4-85e8-e74702359b36
+2016-03-30T12:08:05.878800000 43779.649769s notice: Server got SIGINT from pid 1468, uid 501; shutting down...
+2016-03-30T12:08:05.883233000 43779.654201s notice: Shutting down client connections...
+2016-03-30T12:08:05.885428000 43779.656395s notice: All client connections closed.
+2016-03-30T12:08:05.885438000 43779.656404s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-30T12:08:05.897646000 43779.668614s notice: Storage engine shut down.

@@ -14,6 +14,7 @@ export class PriceView extends React.Component {
               value={value.key}
             />
         )}
+        {turtleDivs}
       </div>
     );
   }
