@@ -29,3 +29,16 @@ export const numPad = [
   { key: '9' },
   { key: '0' },
 ];
+
+export const article = [
+  { type: 'Hose' },
+  { type: 'Bluse' },
+  { type: 'Jacke' },
+  { type: 'Rock' },
+  { type: 'Gütel' },
+  { type: 'Hemd' },
+  { type: 'Gewand' },
+  { type: 'Gewand' },
+  { type: 'Gewand' },
+  { type: 'Gewand' },
+];
